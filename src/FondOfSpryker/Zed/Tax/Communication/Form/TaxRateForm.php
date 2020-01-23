@@ -2,9 +2,9 @@
 
 namespace FondOfSpryker\Zed\Tax\Communication\Form;
 
+use FondOfSpryker\Zed\Tax\Communication\Form\Type\ChoiceType;
 use Generated\Shared\Transfer\TaxRateTransfer;
 use Spryker\Zed\Tax\Communication\Form\TaxRateForm as SprykerTaxRateForm;
-use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Validator\Constraints\GreaterThan;
 
