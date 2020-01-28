@@ -21,8 +21,8 @@
     }
   ],
   "require": {
-    "php": ">=7.1",
-    "spryker/tax": "^5.8.4"
+    "php": ">=7.2",
+    "spryker/tax": "^5.8.7"
   },
   "require-dev": {
     "spryker/code-sniffer": "^0.14.7",
