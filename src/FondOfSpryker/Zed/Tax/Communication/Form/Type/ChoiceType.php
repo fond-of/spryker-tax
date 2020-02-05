@@ -8,7 +8,9 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 class ChoiceType extends SymfonyChoiceType
 {
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
+     *
+     * @return void
      */
     public function configureOptions(OptionsResolver $resolver)
     {

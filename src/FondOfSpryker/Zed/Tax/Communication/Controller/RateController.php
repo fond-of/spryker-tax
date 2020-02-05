@@ -2,11 +2,6 @@
 
 namespace FondOfSpryker\Zed\Tax\Communication\Controller;
 
-use Generated\Shared\Transfer\CountryTransfer;
-use Generated\Shared\Transfer\TaxRateTransfer;
-use Propel\Runtime\ActiveQuery\Criteria;
-use Spryker\Service\UtilText\Model\Url\Url;
-use Spryker\Zed\Kernel\Communication\Controller\AbstractController;
 use Spryker\Zed\Tax\Communication\Controller\RateController as SprykerRateController;
 use Symfony\Component\HttpFoundation\Request;
 
@@ -27,16 +22,16 @@ class RateController extends SprykerRateController
     public function regionsAction(Request $request)
     {
         $idCountry = $request->query->getInt(self::PARAM_URL_ID_COUNTRY);
-        $country =  $this->getFactory()->getCountryFacade()->getCountryByIdCountry($idCountry);
-        $regions [] = [
+        $country = $this->getFactory()->getCountryFacade()->getCountryByIdCountry($idCountry);
+        $regions[] = [
             'value' => '0',
-            'label' => 'No Region'
+            'label' => 'No Region',
         ];
 
         foreach ($country->getRegions() as $regionTransfer) {
             $regions[] = [
                 'value' => $regionTransfer->getIdRegion(),
-                'label' => $regionTransfer->getName()
+                'label' => $regionTransfer->getName(),
             ];
         }
 

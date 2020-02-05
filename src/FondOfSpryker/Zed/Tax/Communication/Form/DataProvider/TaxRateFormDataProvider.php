@@ -2,9 +2,8 @@
 
 namespace FondOfSpryker\Zed\Tax\Communication\Form\DataProvider;
 
-use Spryker\Zed\Tax\Communication\Form\DataProvider\TaxRateFormDataProvider as SprykerTaxRateFormDataProvider;
 use FondOfSpryker\Zed\Tax\Communication\Form\TaxRateForm;
-
+use Spryker\Zed\Tax\Communication\Form\DataProvider\TaxRateFormDataProvider as SprykerTaxRateFormDataProvider;
 
 class TaxRateFormDataProvider extends SprykerTaxRateFormDataProvider
 {

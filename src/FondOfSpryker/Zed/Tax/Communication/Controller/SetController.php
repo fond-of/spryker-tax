@@ -2,10 +2,8 @@
 
 namespace FondOfSpryker\Zed\Tax\Communication\Controller;
 
-use Spryker\Service\UtilText\Model\Url\Url;
-use Spryker\Zed\Kernel\Communication\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\Request;
 use Spryker\Zed\Tax\Communication\Controller\SetController as SprykerSetController;
+use Symfony\Component\HttpFoundation\Request;
 
 /**
  * @method \Spryker\Zed\Tax\Communication\TaxCommunicationFactory getFactory()
@@ -14,7 +12,6 @@ use Spryker\Zed\Tax\Communication\Controller\SetController as SprykerSetControll
  */
 class SetController extends SprykerSetController
 {
-
     /**
      * @param \Symfony\Component\HttpFoundation\Request $request
      *

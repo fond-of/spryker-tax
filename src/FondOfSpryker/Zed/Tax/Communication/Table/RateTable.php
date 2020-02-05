@@ -80,6 +80,7 @@ class RateTable extends SprykerRateTable
                 self::TABLE_COL_ACTIONS => $this->getActionButtons($taxRateEntity),
             ];
         }
+
         return $result;
     }
 
@@ -100,5 +101,4 @@ class RateTable extends SprykerRateTable
 
         return $regionName;
     }
-
 }

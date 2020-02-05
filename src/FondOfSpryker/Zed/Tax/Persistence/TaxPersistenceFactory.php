@@ -15,5 +15,4 @@ class TaxPersistenceFactory extends SprykerTaxPersistenceFactory
     {
         return new TaxRateMapper();
     }
-
 }

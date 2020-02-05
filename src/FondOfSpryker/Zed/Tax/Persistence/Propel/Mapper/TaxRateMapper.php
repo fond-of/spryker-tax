@@ -2,7 +2,6 @@
 
 namespace FondOfSpryker\Zed\Tax\Persistence\Propel\Mapper;
 
-use Generated\Shared\Transfer\CountryTransfer;
 use Generated\Shared\Transfer\RegionTransfer;
 use Generated\Shared\Transfer\TaxRateTransfer;
 use Orm\Zed\Tax\Persistence\SpyTaxRate;
@@ -20,7 +19,6 @@ class TaxRateMapper extends SprykerTaxRateMapper
         SpyTaxRate $taxRateEntity,
         TaxRateTransfer $taxRateTransfer
     ): TaxRateTransfer {
-
         $taxRateTransfer = parent::mapTaxRateEntityToTaxRateTransfer($taxRateEntity, $taxRateTransfer);
 
         /**

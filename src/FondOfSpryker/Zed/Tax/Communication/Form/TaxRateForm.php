@@ -24,8 +24,6 @@ class TaxRateForm extends SprykerTaxRateForm
         $this->addRegion($builder, $options['data']);
     }
 
-
-
     /**
      * @param \Symfony\Component\Form\FormBuilderInterface $builder
      *
@@ -50,7 +48,4 @@ class TaxRateForm extends SprykerTaxRateForm
 
         return $this;
     }
-
-
-
 }
