@@ -100,5 +100,4 @@ class RateTable extends SprykerRateTable
 
         return $regionName;
     }
-
 }
