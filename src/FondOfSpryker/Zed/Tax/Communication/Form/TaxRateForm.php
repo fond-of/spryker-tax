@@ -11,6 +11,7 @@ use Symfony\Component\Validator\Constraints\GreaterThan;
 class TaxRateForm extends SprykerTaxRateForm
 {
     public const FIELD_REGION = 'fkRegion';
+    public const DATA = 'data';
 
     /**
      * @param \Symfony\Component\Form\FormBuilderInterface $builder
@@ -21,7 +22,10 @@ class TaxRateForm extends SprykerTaxRateForm
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         parent::buildForm($builder, $options);
-        $this->addRegion($builder, $options['data']);
+
+        if (isset($options[static::DATA])) {
+            $this->addRegion($builder, $options[static::DATA]);
+        }
     }
 
     /**
