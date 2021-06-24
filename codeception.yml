@@ -1,4 +1,4 @@
-namespace: FondOfSpryker
+namespace: fond-of-spryker/tax
 suites:
   unit:
     path: .

@@ -1,6 +1,6 @@
 {
   "name": "fond-of-spryker/tax",
-  "description": "Extend Spryker Country",
+  "description": "Extends tax module",
   "license": "MIT",
   "authors": [
     {
@@ -21,16 +21,13 @@
     }
   ],
   "require": {
-    "php": ">=7.2",
+    "php": ">=7.3",
     "spryker/tax": "^5.8.7"
   },
   "require-dev": {
-    "spryker/code-sniffer": "^0.14.7",
-    "codeception/codeception": "^2.5",
-    "mikey179/vfsstream": "^1.6",
-    "phpro/grumphp": "^0.14",
-    "sebastian/phpcpd": "^4.1",
-    "php-coveralls/php-coveralls": "^2.0"
+    "fond-of-codeception/spryker": "^1.0",
+    "spryker/code-sniffer": "^0.14",
+    "spryker-sdk/phpstan-spryker": "^0.1"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
@@ -41,7 +38,8 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "FondOfSpryker\\": "tests/FondOfSpryker/"
+      "FondOfSpryker\\": "tests/FondOfSpryker/",
+      "Generated\\": "tests/Generated/"
     }
   }
 }
