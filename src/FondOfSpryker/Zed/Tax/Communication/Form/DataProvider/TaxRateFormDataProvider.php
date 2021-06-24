@@ -23,7 +23,7 @@ class TaxRateFormDataProvider extends SprykerTaxRateFormDataProvider
      */
     protected function createRegionList()
     {
-        $regions = [0 => 'No Region'];
+        $regions = [];
 
         if (!$this->taxRateTransfer) {
             return $regions;

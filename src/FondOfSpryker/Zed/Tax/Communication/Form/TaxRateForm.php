@@ -6,7 +6,6 @@ use FondOfSpryker\Zed\Tax\Communication\Form\Type\ChoiceType;
 use Generated\Shared\Transfer\TaxRateTransfer;
 use Spryker\Zed\Tax\Communication\Form\TaxRateForm as SprykerTaxRateForm;
 use Symfony\Component\Form\FormBuilderInterface;
-use Symfony\Component\Validator\Constraints\GreaterThan;
 
 class TaxRateForm extends SprykerTaxRateForm
 {
@@ -36,18 +35,14 @@ class TaxRateForm extends SprykerTaxRateForm
     protected function addRegion(FormBuilderInterface $builder, TaxRateTransfer $taxRateTransfer)
     {
         $builder->add(self::FIELD_REGION, ChoiceType::class, [
-            'expanded' => false,
+            'required' => false,
             'multiple' => false,
             'label' => 'Region',
             'choices' => array_flip($this->getFactory()->createTaxRateFormDataProvider($taxRateTransfer)->getOptions()[self::FIELD_REGION]),
             'choices_as_values' => true,
-            'constraints' => [
-                new GreaterThan([
-                    'value' => 0,
-                    'message' => 'Select country.',
-                ]),
-            ],
+            'constraints' => [],
             'attr' => [],
+            'placeholder' => '-Select region-'
         ]);
 
         return $this;
